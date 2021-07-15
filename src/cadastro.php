@@ -36,7 +36,7 @@ session_start();
             if (isset($_SESSION['usuario_existe'])) :
             ?>
                 <div class="aviso1">
-                    Usuario existente!<br>
+                    <p>Usuario existente!</p>
                     Faça login informando o seu usuário e senha <strong><a href="../index.php">aqui</a></strong>
                 </div>
             <?php
