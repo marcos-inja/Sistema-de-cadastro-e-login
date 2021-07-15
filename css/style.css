@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,p{
+    color: #0D114F;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+.conteiner{
+    width: 992px;
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 3px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.aviso{
+    position: absolute;
+    margin: auto;
+    top: 20%;;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    height: 100%;
+}
+
+.inputs, .botao{
+    width: 320px;
+    height: 40px;
+    
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.botao{
+    background-color: #3485FF;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: #5276b1;
+    transition: .3s;
+}
+
+.inputs{
+    font-size: 16px;
+    border: 2px solid #A1B2CD;
+    padding: 10px;
+    border-radius: 0px 8px 8px 8px;
+    margin-bottom: 20px;
+}
+
+.inputs:focus{
+    border-color: #3485FF;
+    transition: .3s;
+}
+
+::-webkit-input-placeholder {
+    color: #A1B2CD;
+    size: 14px;
+    font-weight: 400;
+ }
