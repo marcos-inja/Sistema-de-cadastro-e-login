@@ -10,7 +10,7 @@ $result = mysqli_query($conexao, $query);
 $row = mysqli_num_rows($result);
 
 if ($result->num_rows > 0){
-    echo 'ESSES SÃO OS USUÁRIOS CADASTRADOS:';
+    echo 'contas:';
     echo '<br>';
     while($linha = $result->fetch_assoc()){
         echo '<hr>';
