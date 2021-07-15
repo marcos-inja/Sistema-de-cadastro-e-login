@@ -25,7 +25,7 @@ session_start();
             ?>
                 <div class="aviso1">
                     Cadastro efetuado!<br>
-                    Faça login informando o seu usuário e senha <strong><a href="login.php">aqui</a></strong>
+                    Faça login informando o seu usuário e senha <strong><a href="../index.php">aqui</a></strong>
                 </div>
             <?php
             endif;
@@ -37,7 +37,7 @@ session_start();
             ?>
                 <div class="aviso1">
                     Usuario existente!<br>
-                    Faça login informando o seu usuário e senha <strong><a href="login.php">aqui</a></strong>
+                    Faça login informando o seu usuário e senha <strong><a href="../index.php">aqui</a></strong>
                 </div>
             <?php
             endif;
@@ -52,7 +52,7 @@ session_start();
                 <input class="inputs" name="senha" type="password" placeholder="Senha">
                 <button class="botao" type="submit">Cadastrar</button>
             </form>
-            <p>An? Já tem uma conta? <a href="src/cadastro.php">Entre aqui!</a></p>
+            <p>An? Já tem uma conta? <a href="../index.php">Entre aqui!</a></p>
         </div>
     </div>
 
