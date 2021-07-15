@@ -8,44 +8,53 @@ session_start();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Cadastro</title>
 </head>
 
 <body>
-    <h3>Cadastro</h3>
 
-    <?php
-    if (isset($_SESSION['autenticado'])) :
-    ?>
-        
-            Cadastro efetuado!<br>
-            Faça login informando o seu usuário e senha <strong><a href="login.php">aqui</a></strong>
-            
-    <?php
-    endif;
-    unset($_SESSION['autenticado']);
-    ?>
-
-<?php
-    if (isset($_SESSION['usuario_existe'])) :
-    ?>
-        
-            Usuario existente!<br>
-            Faça login informando o seu usuário e senha <strong><a href="login.php">aqui</a></strong>
-            
+    <div class="conteiner">
+        <div>
+            <img src="../assets/imagem.png" alt="">
         </div>
-    <?php
-    endif;
-    unset($_SESSION['usuario_existe']);
-?>
 
-    <form action="cadastrar.php" method="POST">
-        <input name="nome" type="text" placeholder="Nome" autofocus>
-        <input name="email" type="text" placeholder="Email">
-        <input name="usuario" type="text" placeholder="Usuário">
-        <input name="senha" type="password" placeholder="Senha">
-        <button type="submit">Cadastrar</button>
-    </form>
+        <div class="form">
+            <?php
+            if (isset($_SESSION['autenticado'])) :
+            ?>
+                <div class="aviso1">
+                    Cadastro efetuado!<br>
+                    Faça login informando o seu usuário e senha <strong><a href="login.php">aqui</a></strong>
+                </div>
+            <?php
+            endif;
+            unset($_SESSION['autenticado']);
+            ?>
+
+            <?php
+            if (isset($_SESSION['usuario_existe'])) :
+            ?>
+                <div class="aviso1">
+                    Usuario existente!<br>
+                    Faça login informando o seu usuário e senha <strong><a href="login.php">aqui</a></strong>
+                </div>
+            <?php
+            endif;
+            unset($_SESSION['usuario_existe']);
+            ?>
+
+            <form action="cadastrar.php" method="POST">
+                <h1>Cadastre-se!</h1>
+                <input class="inputs" name="nome" type="text" placeholder="Nome" autofocus>
+                <input class="inputs" name="email" type="text" placeholder="Email">
+                <input class="inputs" name="usuario" type="text" placeholder="Usuário">
+                <input class="inputs" name="senha" type="password" placeholder="Senha">
+                <button class="botao" type="submit">Cadastrar</button>
+            </form>
+            <p>An? Já tem uma conta? <a href="src/cadastro.php">Entre aqui!</a></p>
+        </div>
+    </div>
 
 </body>
 

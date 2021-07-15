@@ -41,7 +41,13 @@ h1{
 .aviso{
     position: absolute;
     margin: auto;
-    top: 20%;;
+    top: 20%;
+}
+
+.aviso1{
+    position: absolute;
+    margin: auto;
+    top: 10%;
 }
 
 .form form{
