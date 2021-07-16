@@ -23,8 +23,8 @@ session_start();
             <?php
             if (isset($_SESSION['autenticado'])) :
             ?>
-                <div class="aviso1">
-                    Cadastro efetuado!<br>
+                <div class="avisov aviso">
+                    <p> Cadastro efetuado!</p>
                     Faça login informando o seu usuário e senha <strong><a href="../index.php">aqui</a></strong>
                 </div>
             <?php
@@ -35,7 +35,7 @@ session_start();
             <?php
             if (isset($_SESSION['usuario_existe'])) :
             ?>
-                <div class="aviso1">
+                <div class="aviso aviso2">
                     <p>Usuario existente!</p>
                     Faça login informando o seu usuário e senha <strong><a href="../index.php">aqui</a></strong>
                 </div>

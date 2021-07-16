@@ -25,7 +25,7 @@ session_start();
             <?php
             if (isset($_SESSION['nao_autenticado'])) :
             ?>
-                <div class="aviso"><strong>Usuário ou senha inválidos</strong></div>
+                <div class="aviso aviso1"><strong>Usuário ou senha inválidos</strong></div>
             <?php
             endif;
             unset($_SESSION['nao_autenticado']);
@@ -33,7 +33,7 @@ session_start();
             <?php
             if (isset($_SESSION['vazio'])) :
             ?>
-                <div class="aviso"><strong>Vázio</strong></div>
+                <div class="aviso aviso1"><strong>Vázio</strong></div>
             <?php
             endif;
             unset($_SESSION['vazio']);
